@@ -1,0 +1,9 @@
+name: test-throw-fails-workflow
+on: workflow_dispatch
+
+jobs:
+  test:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: ./.github/actions/test-throws
+      - run: echo "::error::This step should not run"

@@ -1,0 +1,5 @@
+name: test-throws
+description: throws an error in JS to see how GH actions behaves exactly
+runs:
+  using: node16
+  main: index.js
